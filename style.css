@@ -1,0 +1,359 @@
+/* shared style */
+body {
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  margin: 0%;
+}
+.btn-primary {
+  padding: 20px 43px;
+  border-radius: 8px;
+  background: #e55473;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border: 0;
+}
+.section-title {
+  text-align: center;
+  color: #272727;
+  font-size: 40px;
+  font-weight: 800;
+}
+.section-sub-title {
+  color: rgba(39, 39, 39, 0.6);
+  font-size: 18px;
+  font-weight: 400;
+  margin: 32px auto;
+  text-align: center;
+}
+
+/* Banner section */
+header {
+  background: rgba(229, 84, 115, 0.1);
+}
+.banner {
+  display: flex;
+  align-items: center;
+  margin: 0 150px;
+  padding-top: 30px;
+  gap: 50px;
+}
+.header-title {
+  color: #272727;
+  font-size: 60px;
+  font-weight: 800;
+}
+
+/* Feature flower section */
+.feature-section {
+  margin-top: 140px;
+  margin: 0px 200px;
+  margin-bottom: 120px;
+}
+.feature-flowers {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.feature-flower {
+  text-align: center;
+  height: 400px;
+}
+
+.feature-flower img {
+  border-radius: 300px 300px 0px 0px;
+  background: rgba(167, 33, 98, 0.15);
+  height: 80%;
+  width: 80%;
+  padding: 20px 20px 0px 20px;
+}
+.flower-title {
+  color: #272727;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+.flower-details {
+  margin: 128px 0px;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(39, 39, 39, 0.05);
+  gap: 86px;
+}
+.flower-detail {
+  padding: 86px;
+}
+
+/* ========================
+    shop-Section
+    ======================= */
+
+.shop-section {
+  margin: 20px 200px;
+  text-align: center;
+}
+.all-shop {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.shop {
+  width: 600px;
+  height: 400px;
+}
+.shop img {
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.branch {
+  color: #e55473;
+  font-size: 20px;
+  /* box-shadow: 0 1px 2px rgba(; */
+}
+.visit-btn {
+  padding: 10px 33px;
+  border-radius: 8px;
+  background: #f3a909;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border: 0;
+}
+/* ========================
+     Hot Deal Section
+    ======================= */
+.hot-section {
+  display: flex;
+  column-gap: 150px;
+  justify-content: center;
+  padding: 100px 250px;
+  align-items: center;
+  border-radius: 8px;
+  background: rgba(229, 84, 115, 0.05);
+  margin-bottom: 120px;
+  margin-top: 100px;
+}
+
+/* ========================
+     Instagram-Section
+    ======================= */
+.instagram-section {
+  margin: 0px 200px;
+}
+.instagram-image-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.instagram-image-section img {
+  /* width: 400px; */
+  width: 100%;
+}
+.get-section {
+  margin-top: 128px;
+  margin-bottom: 128px;
+  border-radius: 8px;
+  background: url("asset/Rectangle\ 9.png"),
+    lightgray 0px -203.444px / 100% 213.755% no-repeat;
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+}
+.get-description {
+  text-align: center;
+  color: rgba(39, 39, 39, 0.6);
+  font-size: 18px;
+  font-weight: 400;
+}
+.response-form {
+  display: flex;
+  gap: 16px;
+  margin: 50px auto;
+  justify-content: center;
+  width: 80%;
+}
+#email {
+  padding: 10px;
+  border: 0;
+  border-radius: 8px;
+  background: #fff;
+  width: 100%;
+  color: rgba(39, 39, 39, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* ========================
+     Footer-section 
+    ======================= */
+footer {
+  background: #272727;
+  padding: 100px 0px;
+  text-align: center;
+}
+.footer-title {
+  color: #e55473;
+  font-size: 48px;
+  font-weight: 800;
+}
+#shop-text {
+  color: white;
+  font-size: 48px;
+  font-weight: 800;
+}
+.footer-section-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  font-weight: 400;
+}
+.footer-copy-right {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Responsive for mobile devices */
+@media screen and (max-width: 767px) {
+  .banner,
+  .feature-flowers,
+  .flower-details,
+  .all-shop,
+  .hot-section,
+  .instagram-image-section,
+  .response-form {
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+
+  /* Feature flower section */
+  .feature-section,
+  .shop-section,
+  .instagram-section {
+    margin: 20px 20px;
+    text-align: center;
+  }
+  .flower-detail {
+    padding: 26px;
+  }
+
+  /* ========================
+    shop-Section
+    ======================= */
+  .shop {
+    width: auto;
+    height: 100%px;
+    margin: 20px 0px;
+  }
+
+  .visit-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #f3a909;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border: 0;
+    width: 80%;
+  }
+
+  /* ========================
+     Footer-section 
+    ======================= */
+  footer {
+    padding: 20px 0px;
+  }
+  .footer-title {
+    color: #e55473;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  #shop-text {
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .footer-section-description {
+    font-size: 15px;
+  }
+  .footer-copy-right {
+    font-size: 14px;
+  }
+}
+
+/* Responsive for tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .banner,
+  .feature-flowers,
+  .flower-details,
+  .all-shop,
+  .hot-section,
+  .instagram-image-section,
+  .response-form {
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+
+  /* Feature flower section */
+  .feature-section,
+  .shop-section,
+  .instagram-section {
+    margin: 20px 20px;
+    text-align: center;
+  }
+  .flower-detail {
+    padding: 26px;
+  }
+
+  /* ========================
+    shop-Section
+    ======================= */
+  .shop {
+    width: auto;
+    height: 100%px;
+    margin: 20px 0px;
+  }
+
+  /* ========================
+     Footer-section 
+    ======================= */
+  footer {
+    padding: 20px 0px;
+  }
+  .footer-title {
+    color: #e55473;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  #shop-text {
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .footer-section-description {
+    font-size: 15px;
+  }
+  .footer-copy-right {
+    font-size: 14px;
+  }
+}
